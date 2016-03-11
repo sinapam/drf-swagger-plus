@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(
-    name='DRF Swagger Plus',
+    name='drf-swagger-plus',
     version='0.1',
     description='An extension for django-rest-swagger',
     author='Paul and Betty Devs',
