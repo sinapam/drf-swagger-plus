@@ -5,6 +5,7 @@ from drf_swagger_plus.docgenerator import DocumentationGenerator
 
 
 class APIRootView(SwaggerApiView):
+    authentication_classes = ()
 
     def get(self, request):
         apis = self.get_apis_for_resource('')
