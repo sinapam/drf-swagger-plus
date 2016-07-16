@@ -2,7 +2,7 @@ from rest_framework_swagger.docgenerator import DocumentationGenerator as RestFr
 from rest_framework_swagger.introspectors import IntrospectorHelper
 
 
-class DocumentationGenerator(RestFrameworkSwaggerDocumentationGenerator):
+class APIGenerator(RestFrameworkSwaggerDocumentationGenerator):
 
     def generate(self, apis):
         """
