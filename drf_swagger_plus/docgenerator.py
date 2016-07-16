@@ -11,9 +11,7 @@ class DocumentationGenerator(RestFrameworkSwaggerDocumentationGenerator):
         api_docs = {}
         for api in apis:
             api_docs[api['pattern'].name] = {
-                'description': IntrospectorHelper.get_summary(api['callback']),
                 'path': api['path'],
-                'operations': self.get_operations(api, apis),
             }
 
         return api_docs
