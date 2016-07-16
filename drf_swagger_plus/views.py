@@ -14,7 +14,5 @@ class APIRootView(SwaggerApiView):
             'apiVersion': rfs.SWAGGER_SETTINGS.get('api_version', ''),
             'swaggerVersion': '1.2',
             'basePath': self.api_full_uri.rstrip('/'),
-            'resourcePath': '/',
             'apis': generator.generate(apis),
-            'models': generator.get_models(apis),
         })
